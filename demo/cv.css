@@ -1,0 +1,311 @@
+:root {
+    --doc-padding-hori: 22.5mm;
+    --doc-padding-vert: 17.5mm;
+    --left-column-width: 55mm;
+    --column-padding: 15mm;
+    --text-color: #282a36;
+    --name-color: #44475a;
+    --header-color: #44475a;
+    --accent-color: #ff79c6;
+    /* --accent-color: #6272a4; */
+    --name-font: Source Sans Pro;
+    /* --headline-font: Iosevka; */
+    /* --section-font: Iosevka; */
+    --headline-font: JetBrainsMono Nerd Font;
+    --section-font: JetBrainsMono Nerd Font;
+    --content-font: Avenir Next;
+    /* --section-font: Open Sans; */
+    /* --header-font: JetBrainsMono Nerd Font; */
+    --avatar-size: 3cm;
+    --text-size: 10pt;
+}
+
+@media screen {
+    body {
+        margin: 20mm auto;
+        width: 210mm;
+        background-color: grey;
+    }
+
+    .canvas {
+        padding: var(--doc-padding-vert) var(--doc-padding-hori);
+        background-color: white;
+        box-shadow: 2px 5px 10px #333;
+    }
+}
+
+@media print {
+    @page {
+        size: 210mm 297mm;
+    }
+
+    body {
+        margin: var(--doc-padding-vert) var(--doc-padding-hori)
+    }
+}
+
+body {
+    font-size: var(--text-size);
+    line-height: 130%;
+    color: var(--text-color);
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+p,
+ul,
+li {
+    text-align: justify;
+    text-justify: inter-word;
+    font-family: var(--content-font);
+    margin-bottom: 18pt;
+}
+
+a {
+    text-decoration: underline dotted;
+}
+
+sup {
+    vertical-align: super;
+    font-size: 80%;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 80%;
+}
+
+li {
+    margin: 0 0 5pt 0
+}
+
+h1 {
+    font-family: var(--name-font);
+    font-weight: bold;
+    font-size: 32pt;
+    margin-bottom: 16pt;
+}
+
+
+h3 {
+    font-size: 11pt;
+    font-family: var(--content-font);
+    font-weight: 600;
+    color: var(--header-color)
+}
+
+h4 {
+    margin: 2pt 0 0 0;
+    font-family: var(--content-font);
+}
+
+hr {
+    width: 32pt;
+    margin-left: 0;
+    margin-bottom: 10pt;
+    height: 2px;
+    background-color: var(--accent-color);
+    border-width: 0;
+
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    height: var(--avatar-size);
+    margin: 0 0 20pt 0;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: var(--avatar-size);
+}
+
+.avatar img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 3pt solid var(--accent-color);
+}
+
+.header-text {
+    position: relative;
+    top: 5px;
+}
+
+#name {
+    font-family: var(--name-font);
+    color: var(--name-color);
+    /* text-transform: uppercase; */
+    position: relative;
+    left: -2px;
+}
+
+#headline {
+    font-family: var(--headline-font);
+    color: var(--text-color);
+    /* font-style: italic; */
+    font-size: 12pt;
+    color: var(--header-color);
+
+}
+
+.section-header {
+    font-family: var(--section-font);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: var(--header-color);
+}
+
+.parent {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(1);
+    grid-template-areas:
+        'left right';
+}
+
+.left {
+    grid-area: left;
+    width: var(--left-column-width);
+    padding-right: var(--column-padding);
+    text-align: left:
+}
+
+.right {
+    grid-area: right;
+}
+
+.page2 {
+    margin-top: 20mm;
+    page-break-before: always;
+}
+
+.quote {
+    font-size: 10pt;
+    text-align: justify;
+    font-style: italic;
+    margin: 0;
+}
+
+.by {
+    font-size: 10pt;
+    color: var(--header-color);
+    font-weight: 500;
+    text-align: right;
+    margin: 5pt 0 10pt 0;
+}
+
+li {
+    list-style-type: disc;
+    margin-left: 1.2rem;
+}
+
+.contact li {
+    margin-left: 1rem;
+    padding-inline-start: 0.5rem;
+}
+
+.date {
+    list-style-type: '🗓';
+}
+
+.location {
+    list-style-type: '📍';
+}
+
+.phone {
+    list-style-type: '📞';
+}
+
+.mail {
+    list-style-type: '✉️';
+}
+
+.linkedin::marker {
+    content: url(../media/linkedin-logo.svg);
+}
+
+.github::marker {
+    content: url(../media/github-logo.svg);
+}
+
+.skills p {
+    text-align: left;
+}
+
+h5 {
+    /* font-family: JetBrainsMono Nerd Font; */
+    /* font-family: Open Sans; */
+    /* font-weight: 600; */
+    /* font-weight: bold; */
+    /* font-size: 11pt; */
+    margin: 0 4cm 6pt 0;
+}
+
+.technical-summary ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.technical-summary li {
+    margin-right: 10pt;
+}
+
+.about,
+.career {
+    text-align: justify;
+}
+
+.school {
+    display: grid;
+    grid-template-columns: 15mm;
+    grid-template-areas:
+        'logo school-name';
+    margin-bottom: 11pt;
+}
+
+.logo {
+    grid-area: logo;
+}
+
+.logo img {
+    height: 32pt;
+}
+
+.school-name {
+    grid-area: school-name;
+    align-self: flex-end;
+}
+
+.job-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+
+footer {
+    font-family: Open Sans;
+    font-style: italic;
+    text-align: center;
+    color: #ccc;
+    padding-top: 160mm;
+}

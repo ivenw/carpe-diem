@@ -1,0 +1,85 @@
+[info]
+name = "Iven Winkelmann"
+tagline = "Full Stack Data Scientist with Engineering Mindset"
+about = """\
+Quick learner and analytical mind with 9 years of experience in research and data \
+analysis. I enjoy optimizing processes and tackling problems through data, \
+always asking "How does this help us act?".\
+"""
+personal = """In my free time I enjoy video games to relax and kick back. \
+When I don't have a controller in my hand, I like to look for inspiration for things \
+to cook with my partner, going on walks or bike tours. I am driven by curiosity and \
+thrive on learning about something new, so I am often found scouring Wikipedia, \
+Reddit, or YouTube for details on topics such as rockets, space, psychology or \
+programming and computer science. I am quite handy and in the spirit of "working \
+with my brain, relaxing with my hands", am not afraid to take a screwdriver into my \
+own hand to fix or build something (like my own keyboards). I enjoy hosting friends \
+and family, tending to them with my signature Amaretto Whisky Sour and engaging in \
+a round of board- gaming."""
+
+[contact]
+github = { text = "github.com/ivenw", url = "https://github.com/ivenw", logo = "github.svg" }
+linkedin = { text = "linkedin.com/in/ivenw", url = "https://linkedin.com/ivenw", logo = "linkedin.svg" }
+email = "winkelmann.iven@gmail.com"
+phone = "+46 (0) 760 81 22 83"
+location = "Stockholm"
+
+[skills]
+core = ["Googling", "Problem Solving", "Communication", "Teamwork", "Leadership"]
+technical = ["Python"]
+languages = ["English (fluent)", "Swedish (conversational)", "German (native)",]
+
+[[experience]]
+title = "Data Science Tech Lead"
+company = "ACNE"
+location = "Stockholm, Sweden"
+date = "2022-09 — Present"
+bulletpoints = [
+    "Conducting code review of junior team members to ensure standards and foster growth.",
+    "Leading initiative to adopt development best practices in the team.",
+    "Assesing technical requirements for projects and setting tasks with the team.",
+    ]
+
+[[experience]]
+title = "Data Analytics Consultant"
+company = "IKEA"
+location = "Älmhult, Sweden"
+date = "2022-02 — Present"
+bulletpoints = [
+    "Ongoing support of content teams with web analytics, data literacy training, and strategic recommendations.",
+    "Set KPIs for assessing and improving marketing communications in an e-commerce environment.",
+]
+
+[[experience]]
+title = "Data Scientist"
+company = "ACNE"
+logo = "acne.png"
+location = "Stockholm, Sweden"
+date = "2022-01 — Prersent"
+bulletpoints = [
+    "Identifying opportunity areas for enhancing brand communication strategies with data.",
+    "Performing data engineering responsibilities on a regular basis to ensure data availability for the team.",
+    "Established and implemented requirements for the data science tech stack in a new team.",
+    ]
+
+[[education]]
+degree = "PhD in Biochemistry"
+school = "Stockholm University"
+date = "2014-11 — 2021-02"
+
+
+[[reference]]
+name = "Prof. Dr. David Drew"
+role = "PhD Supervisor"
+quote = """Iven is one of the most naturally gifted students I've supervised to date \
+and has strong analytical and planning skills and is a highly effective communicator. \
+[...] At a personal level, Iven is easy to work with and I am sure he will be an \
+asset to any work environment that he goes to."""
+
+[[reference]]
+name = "Nils Skoglund"
+role = "Teacher, Nod Coding"
+quote = """In terms of technical ability, Iven is the most talented student I've \
+supervised to date. He adopts rigorous methodology & has a highly creative mind, \
+enabling him to deliver robust & novel solutions to complex problems. I also have \
+to mention Iven's keen sense for aesthetics and presentation skills."""

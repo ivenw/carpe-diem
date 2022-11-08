@@ -3,3 +3,5 @@ __pycache__/
 # Added by cargo
 
 /target
+.DS_Store
+demo/

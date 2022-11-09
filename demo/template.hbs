@@ -1,46 +1,22 @@
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/cv.css">
 
-<head>
-    <style>
-        .github::marker {
-            content: url ("{{media}}/{{contact.github.logo}}");
-        }
-
-        .linkedin::marker {
-            content: url ("{{media}}/{{contact.linkedin.logo}}");
-        }
-
-        .location {
-            list-style-type: '📍';
-        }
-
-        .phone {
-            list-style-type: '📞';
-        }
-
-        .mail {
-            list-style-type: '✉️';
-        }
-    </style>
-</head>
-
 <body>
     <div class="page">
         <div class="header">
-            <div>
-                {{info.name}}
-                {{info.tagline}}
+            <div class="header__text">
+                <h1 class="name">{{info.name}}</h1>
+                <h2 class="tagline">{{info.tagline}}</h2>
             </div>
             <div class="avatar">
                 <img src="media/{{info.avatar}}">
             </div>
         </div> <!-- header -->
 
-        <div class=" column-wrapper">
+        <div class="column-wrapper">
             <div class="column-left">
                 <div class="list" id="skills">
-                    <h2>Skills</h2>
+                    <h3 class="section-title">Skills</h3>
                     <hr>
                     <ul>
                         {{#each skills.core}}
@@ -50,7 +26,7 @@
                 </div> <!-- skills -->
 
                 <div class="list" , id="technical-summary">
-                    <h2>Techichal Summary</h2>
+                    <h3 class="section-title">Technichal Summary</h3>
                     <hr>
                     <ul>
                         {{#each skills.technical}}
@@ -60,7 +36,7 @@
                 </div> <!-- technical-summary -->
 
                 <div class="list" id="languages">
-                    <h2>languages</h2>
+                    <h3 class="section-title">Languages</h3>
                     <hr>
                     <ul>
                         {{#each skills.languages}}
@@ -70,7 +46,7 @@
                 </div> <!-- languages -->
 
                 <div class="list" id="contact">
-                    <h2>Contact</h2>
+                    <h3 class="section-title">Contact</h3>
                     <hr>
                     <ul>
                         {{#if contact.github}}
@@ -88,25 +64,27 @@
 
             <div class="column-right">
                 <div class="block" id="about">
-                    <h2>About me</h2>
+                    <h3 class="section-title">About me</h3>
                     <hr>
                     <p>{{info.about}}</p>
                 </div>
 
                 <div class="block" id="experience">
-                    <h2>Experience</h2>
+                    <h3 class="section-title">Experience</h3>
                     <hr>
                     {{#each experience}}
                     <div class="exp">
-                        <div class="exp__logo">
-                            <img src="media/{{this.logo}}">
-                        </div>
-                        <div class="exp__name">
-                            <h3>{{this.title}}</h3>
-                            <span class="exp__date">
-                                <h4>{{this.company}}</h4>
-                                <h4>{{this.date}}</h4>
-                            </span>
+                        <div class="exp-header ">
+                            <div class="exp-logo">
+                                <img src="media/{{this.logo}}">
+                            </div>
+                            <div class="exp-info">
+                                <h4 class="exp-title">{{this.title}}</h4>
+                                <div class="exp-date">
+                                    <h5>{{this.company}}</h5>
+                                    <h5>{{this.date}}</h5>
+                                </div>
+                            </div>
                         </div>
                         {{#if this.bulletpoints}}
                         <ul>
@@ -125,12 +103,12 @@
     <div class="page">
         <div class="column-wrapper">
             <div class="column-left">
-                <h2>References</h2>
+                <h3 class="section-title">References</h3>
                 <hr>
-                {{#each references}}
+                {{#each reference}}
                 <div class="reference">
                     <p class="quote">{{this.quote}}</p>
-                    <p class="by">{{this.name}}</p>
+                    <p class="by">&mdash; {{this.name}}</p>
                     <p class="role">{{this.role}}</p>
                 </div>
                 {{/each}}
@@ -138,19 +116,21 @@
 
             <div class="colummn-right">
                 <div class="education">
-                    <h2>Education</h2>
+                    <h3 class="section-title">Education</h3>
                     <hr>
                     {{#each education}}
                     <div class="exp">
-                        <div class="exp__logo">
-                            <img src="media/{{this.logo}}">
-                        </div>
-                        <div class="exp__name">
-                            <h3>{{this.title}}</h3>
-                            <span class="exp__date">
-                                <h4>{{this.school}}</h4>
-                                <h4>{{this.date}}</h4>
-                            </span>
+                        <div class="exp-header ">
+                            <div class="exp-logo">
+                                <img src="media/{{this.logo}}">
+                            </div>
+                            <div class="exp-info">
+                                <h4 class="exp-title">{{this.degree}}</h4>
+                                <div class="exp-date">
+                                    <h5>{{this.school}}</h5>
+                                    <h5>{{this.date}}</h5>
+                                </div>
+                            </div>
                         </div>
                         {{#if this.bulletpoints}}
                         <ul>
@@ -164,7 +144,7 @@
                 </div> <!-- education -->
 
                 <div class="personal">
-                    <h2>Personal</h2>
+                    <h3 class="section-title">Personal</h3>
                     <hr>
                     <p>{{info.personal}}</p>
                 </div>

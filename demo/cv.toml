@@ -27,7 +27,7 @@ location = "Stockholm"
 
 [skills]
 core = ["Googling", "Problem Solving", "Communication", "Teamwork", "Leadership"]
-technical = ["Python", "SQL", "git", "PySpark", "Docker", "AWS", "Databricks"]
+technical = ["Python", "SQL", "regex", "git", "PySpark", "Docker", "AWS", "Databricks"]
 languages = ["English (fluent)", "Swedish (conversational)", "German (native)",]
 
 [[experience]]
@@ -35,7 +35,7 @@ title = "Data Science Tech Lead"
 company = "ACNE"
 logo = "acne.jpg"
 location = "Stockholm, Sweden"
-date = "2022-09 — Present"
+date = "09/2022 — Present"
 bulletpoints = [
     "Conducting code review of junior team members to ensure standards and foster growth.",
     "Leading initiative to adopt development best practices in the team.",
@@ -47,7 +47,7 @@ title = "Data Analytics Consultant"
 company = "IKEA"
 logo = "ikea.webp"
 location = "Älmhult, Sweden"
-date = "2022-02 — Present"
+date = "02/2022 — Present"
 bulletpoints = [
     "Ongoing support of content teams with web analytics, data literacy training, and strategic recommendations.",
     "Set KPIs for assessing and improving marketing communications in an e-commerce environment.",
@@ -58,18 +58,69 @@ title = "Data Scientist"
 company = "ACNE"
 logo = "acne.jpg"
 location = "Stockholm, Sweden"
-date = "2022-01 — Prersent"
+date = "01/2022 — Prersent"
 bulletpoints = [
     "Identifying opportunity areas for enhancing brand communication strategies with data.",
     "Performing data engineering responsibilities on a regular basis to ensure data availability for the team.",
     "Established and implemented requirements for the data science tech stack in a new team.",
     ]
 
+[[experience]]
+title = "Data Analytics Instructor"
+company = "Nod Coding"
+logo = "nod.png"
+location = "Stockholm, Sweden"
+date = "10/2021 — 12/2021"
+
+
+[[education]]
+degree = "Data Science / Analytics Coding Bootcamp"
+school = "Nod Coding"
+logo = "nod.png"
+location = "Stockholm, Sweden"
+date = "07/2021 — 09/2021"
+bulletpoints = [
+    "400 hours intensive studies, keeping up with current and future trends in Data Science and Data Analysis.",
+    "Deep dive into statistics, bayesian A/B-testing, clustering techniques and more.",
+    "Completed 5 code jam style projects utilizing Python/Pandas, SQL and ML techniques. The results are hosted in my portfolio on GitHub.",
+]
+
 [[education]]
 degree = "PhD in Biochemistry"
 school = "Stockholm University"
 logo = "su.jpeg"
-date = "2014-11 — 2021-02"
+date = "11/2014 — 02/2021"
+bulletpoints = [
+    "Implemented custom Python scripts to speed up analysis and entry of experimental data 10-fold.",
+    "Effectively supervised project students and took charge in the onboarding of new colleagues.",
+    "Deepened problem solving, project planning, trouble shooting and time management in a team and individual context.",
+]
+
+[[education]]
+degree = "MSc with excellence in Biopysics"
+school = "University of Osnabrück"
+logo = "uos.png"
+date = "10/2012 — 08/2014"
+
+[[education]]
+degree = "BSc in Cell Biology"
+school = "University of Osnabrück"
+logo = "uos.png"
+date = "10/2009 — 09/2012"
+
+
+[[projects]]
+name = "This CV"
+description = """For building this CV, I wrote a CLI tool in Rust that parses a custom 
+HTML/CSS Handlebars template, populating it with data from a TOML file. The tool has
+proven useful to friends and family as well."""
+gh_link = "github.com/ivenw/carpe-vita"
+
+[[projects]]
+name = "Open Source contributions to Helix Editor"
+description = """I am a big fan of the Helix editor and am trying to contribute to 
+it in my free time to learn more about Rust and Open Source."""
+gh_link = "github.com/helix-editor/helix/issues/4298"
 
 
 [[reference]]

@@ -148,6 +148,17 @@
                     {{/each}}
                 </div> <!-- education -->
 
+                <div class="projects">
+                    <h3 class="section-title">Projects</h3>
+                    <hr>
+                    {{#each project}}
+                    <div class="project">
+                        <h4 class="project-title">{{this.title}}</h4>
+                        <p class="project-description">{{this.description}}</p>
+                        <p class="project-url"><a href="https://{{this.url}}">{{this.url}}</a></p>
+                    </div>
+                    {{/each}}
+                </div> <!-- projects -->
 
             </div> <!-- column-right -->
         </div> <!-- column-wrapper -->

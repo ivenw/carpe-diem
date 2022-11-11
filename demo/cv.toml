@@ -109,18 +109,18 @@ logo = "uos.png"
 date = "10/2009 — 09/2012"
 
 
-[[projects]]
-name = "This CV"
+[[project]]
+title = "This CV"
 description = """For building this CV, I wrote a CLI tool in Rust that parses a custom 
 HTML/CSS Handlebars template, populating it with data from a TOML file. The tool has
 proven useful to friends and family as well."""
-gh_link = "github.com/ivenw/carpe-vita"
+url = "github.com/ivenw/carpe-vita"
 
-[[projects]]
-name = "Open Source contributions to Helix Editor"
+[[project]]
+title = "Open Source contributions to Helix Editor"
 description = """I am a big fan of the Helix editor and am trying to contribute to 
 it in my free time to learn more about Rust and Open Source."""
-gh_link = "github.com/helix-editor/helix/issues/4298"
+url = "github.com/helix-editor/helix/issues/4298"
 
 
 [[reference]]

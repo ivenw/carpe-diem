@@ -29,7 +29,7 @@ dependencies = [
 ]
 
 [[package]]
-name = "carpe-diem"
+name = "carpe-vita"
 version = "0.1.0"
 dependencies = [
  "clap",

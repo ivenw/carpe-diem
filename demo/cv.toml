@@ -1,22 +1,21 @@
 [info]
 name = "Iven Winkelmann"
-tagline = "Full Stack Data Scientist with Engineering Mindset"
-avatar = "face.png"
+tagline = "Data Scientist"
+avatar = "me.png"
 about = """\
 Quick learner and analytical mind with 9 years of experience in research and data \
 analysis. I enjoy optimizing processes and tackling problems through data, \
 always asking "How does this help us act?".\
 """
 personal = """In my free time I enjoy video games to relax and kick back. \
-When I don't have a controller in my hand, I like to look for inspiration for things \
-to cook with my partner, going on walks or bike tours. I am driven by curiosity and \
-thrive on learning about something new, so I am often found scouring Wikipedia, \
+When I don't have a controller in my hand, I'm looking to quench my curiosity and \
+thirst for learning about something new, by scouring Wikipedia, \
 Reddit, or YouTube for details on topics such as rockets, space, psychology or \
 programming and computer science. I am quite handy and in the spirit of "working \
 with my brain, relaxing with my hands", am not afraid to take a screwdriver into my \
 own hand to fix or build something (like my own keyboards). I enjoy hosting friends \
 and family, tending to them with my signature Amaretto Whisky Sour and engaging in \
-a round of board- gaming."""
+a round of board-gaming."""
 
 [contact]
 github = { text = "github.com/ivenw", url = "https://github.com/ivenw", logo = "github.svg" }
@@ -27,7 +26,7 @@ location = "Stockholm"
 
 [skills]
 core = ["Googling", "Problem Solving", "Communication", "Teamwork", "Leadership"]
-technical = ["Python", "SQL", "regex", "git", "PySpark", "Docker", "AWS", "Databricks"]
+technical = ["Python", "sklearn & co", "SQL", "PySpark", "regex", "git",  "Docker", "AWS", "Databricks", "data modeling"]
 languages = ["English (fluent)", "Swedish (conversational)", "German (native)",]
 
 [[experience]]
@@ -37,8 +36,8 @@ logo = "acne.jpg"
 location = "Stockholm, Sweden"
 date = "09/2022 — Present"
 bulletpoints = [
-    "Conducting code review of junior team members to ensure standards and foster growth.",
-    "Leading initiative to adopt development best practices in the team.",
+    "Conducting code review together with team members to ensure standards and foster growth.",
+    "Leading initiative to adopt software development best practices in the team.",
     "Assesing technical requirements for projects and setting tasks with the team.",
     ]
 
@@ -49,7 +48,8 @@ logo = "ikea.webp"
 location = "Älmhult, Sweden"
 date = "02/2022 — Present"
 bulletpoints = [
-    "Ongoing support of content teams with web analytics, data literacy training, and strategic recommendations.",
+    "Ongoing support of content strategy teams with web analytics, data literacy training",
+    "Strategic recommendations for how to best utilize metrics and data.",
     "Set KPIs for assessing and improving marketing communications in an e-commerce environment.",
 ]
 
@@ -68,15 +68,18 @@ bulletpoints = [
 [[experience]]
 title = "Data Analytics Instructor"
 company = "Nod Coding"
-logo = "nod.png"
+logo = "nod.jpg"
 location = "Stockholm, Sweden"
 date = "10/2021 — 12/2021"
+bulletpoints = [
+    "Development of SQL and ML course material",
+    "Instruction of students in Python, SQL, Data Visualisation, and ML."]
 
 
 [[education]]
 degree = "Data Science / Analytics Coding Bootcamp"
 school = "Nod Coding"
-logo = "nod.png"
+logo = "nod.jpg"
 location = "Stockholm, Sweden"
 date = "07/2021 — 09/2021"
 bulletpoints = [
@@ -112,14 +115,13 @@ date = "10/2009 — 09/2012"
 [[project]]
 title = "This CV"
 description = """For building this CV, I wrote a CLI tool in Rust that parses a custom 
-HTML/CSS Handlebars template, populating it with data from a TOML file. The tool has
-proven useful to friends and family as well."""
-url = "github.com/ivenw/carpe-vita"
+HTML/CSS Handlebars template, populating it with data from a TOML file."""
+url = "github.com/ivenw/carpe-vitam"
 
 [[project]]
 title = "Open Source contributions to Helix Editor"
-description = """I am a big fan of the Helix editor and am trying to contribute to 
-it in my free time to learn more about Rust and Open Source."""
+description = """I am a big fan of the Helix terminal editor and am trying to contribute to 
+it in my free time. This has been great to learn more about Rust and Open Source."""
 url = "github.com/helix-editor/helix/issues/4298"
 
 

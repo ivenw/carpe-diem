@@ -1,3 +1,4 @@
+<html lang=en-US></html>
 <link rel="stylesheet" href="css/reset.css">
 <link rel="stylesheet" href="css/cv.css">
 
@@ -151,13 +152,17 @@
                 <div class="projects">
                     <h3 class="section-title">Projects</h3>
                     <hr>
+                    <ul>
                     {{#each project}}
+                    <li>
                     <div class="project">
                         <h4 class="project-title">{{this.title}}</h4>
-                        <p class="project-description">{{this.description}}</p>
-                        <p class="project-url"><a href="https://{{this.url}}">{{this.url}}</a></p>
+                        <p class="project-description">{{this.description}}<br>
+                        <p class="project-url">→ <a href="https://{{this.url}}">{{this.url}}</a></p>
                     </div>
+                    </li>
                     {{/each}}
+                    </ul>
                 </div> <!-- projects -->
 
             </div> <!-- column-right -->

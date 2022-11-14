@@ -49,12 +49,9 @@ p,
 ul,
 li {
     text-align: justify;
+    hyphens: auto;
     font-family: var(--content-font);
-    margin: 0 0 18pt 0;
-}
-
-p {
-    text-justify: inter-word;
+    margin: 0 0 12pt 0;
 }
 
 li {
@@ -144,8 +141,7 @@ hr {
 .tagline {
     font-family: var(--tagline-font);
     color: var(--text-color);
-    /* font-style: italic; */
-    font-size: 12pt;
+    font-size: 14pt;
     color: var(--header-color);
 
 }
@@ -169,6 +165,11 @@ hr {
     grid-area: right;
 }
 
+.list,
+.block {
+    margin: 0 0 20pt 0;
+}
+
 .section-title {
     font-family: var(--section-font);
     font-weight: bold;
@@ -176,7 +177,6 @@ hr {
     text-transform: uppercase;
     font-size: 11pt;
     color: var(--header-color);
-    /* font-weight: 600; */
 }
 
 #technical-summary ul {
@@ -245,15 +245,34 @@ hr {
 }
 
 .exp-title {
-    font-size: 12pt;
+    font-size: 11pt;
     font-weight: 500;
     margin: 0 0 3pt 0;
 }
 
-
 .exp-date {
     display: flex;
     justify-content: space-between;
+}
+
+.project {
+    font-family: var(--content-font);
+    margin: 0 0 18pt 0;
+}
+
+.project-title {
+    font-size: 11pt;
+    font-weight: 500;
+    margin: 0 0 5pt 0;
+}
+
+.project-description {
+    margin: 0 0 5pt 0;
+}
+
+.project-url {
+    text-align: left;
+    margin: 5pt 0 0 0;
 }
 
 .reference {

@@ -1,0 +1,294 @@
+:root {
+    --page-width: 210mm;
+    --page-height: 297mm;
+    --doc-padding-hori: 22.5mm;
+    --doc-padding-vert: 17.5mm;
+    --left-column-width: 55mm;
+    --column-padding: 15mm;
+    --text-color: #282a36;
+    --name-color: #44475a;
+    --header-color: #44475a;
+    --accent-color: #ff79c6;
+    --name-font: Source Sans Pro;
+    --tagline-font: JetBrainsMono Nerd Font;
+    --section-font: JetBrainsMono Nerd Font;
+    --content-font: Avenir Next;
+    --avatar-size: 3cm;
+    --text-size: 10pt;
+}
+
+@media screen {
+    body {
+        margin: 20mm auto;
+        width: 210mm;
+        background-color: grey;
+    }
+
+    .page {
+        height: var(--page-height);
+        margin: 50pt 0 50pt 0;
+        background-color: white;
+        box-shadow: 2px 5px 10px #333;
+    }
+}
+
+@media print {
+    @page {
+        size: var(--page-width) var(--page-height);
+    }
+}
+
+
+body {
+    font-size: var(--text-size);
+    line-height: 130%;
+    color: var(--text-color);
+}
+
+p,
+ul,
+li {
+    text-align: justify;
+    font-family: var(--content-font);
+    margin: 0 0 18pt 0;
+}
+
+p {
+    text-justify: inter-word;
+}
+
+li {
+    margin: 0 0 5pt 1.2rem;
+    list-style-type: disc;
+}
+
+b {
+    font-weight: bold;
+}
+
+i {
+    font-style: italic;
+}
+
+u {
+    text-decoration: underline;
+}
+
+a {
+    text-decoration: underline dotted;
+    color: var(--text-color);
+}
+
+sup {
+    vertical-align: super;
+    font-size: 80%;
+}
+
+sub {
+    vertical-align: sub;
+    font-size: 80%;
+}
+
+hr {
+    width: 32pt;
+    margin-left: 0;
+    margin-bottom: 10pt;
+    height: 2px;
+    background-color: var(--accent-color);
+    border-width: 0;
+
+}
+
+.page {
+    page-break-after: always;
+    padding: var(--doc-padding-vert) var(--doc-padding-hori);
+}
+
+
+
+.header {
+    display: flex;
+    align-items: center;
+    height: var(--avatar-size);
+    margin: 0 0 20pt 0;
+    justify-content: space-between;
+}
+
+.avatar {
+    width: var(--avatar-size);
+}
+
+.avatar img {
+    width: var(--avatar-size);
+    height: var(--avatar-size);
+    border-radius: 50%;
+    background-color: var(--accent-color);
+    border: 3pt solid var(--accent-color);
+}
+
+.header__text {
+    position: relative;
+    top: 5px;
+}
+
+.name {
+    font-family: var(--name-font);
+    color: var(--name-color);
+    position: relative;
+    left: -2px;
+    font-weight: bold;
+    font-size: 32pt;
+    margin-bottom: 16pt;
+}
+
+.tagline {
+    font-family: var(--tagline-font);
+    color: var(--text-color);
+    /* font-style: italic; */
+    font-size: 12pt;
+    color: var(--header-color);
+
+}
+
+.column-wrapper {
+    display: grid;
+    grid-template-columns: repeat(2);
+    grid-template-rows: repeat(1);
+    grid-template-areas:
+        'left right';
+}
+
+.column-left {
+    grid-area: left;
+    width: var(--left-column-width);
+    padding-right: var(--column-padding);
+    text-align: left;
+}
+
+.column-right {
+    grid-area: right;
+}
+
+.section-title {
+    font-family: var(--section-font);
+    font-weight: bold;
+    font-style: italic;
+    text-transform: uppercase;
+    font-size: 11pt;
+    color: var(--header-color);
+    /* font-weight: 600; */
+}
+
+#technical-summary ul {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#technical-summary li {
+    margin-right: 10pt;
+}
+
+#contact li {
+    margin-left: 1rem;
+    padding-inline-start: 0.5rem;
+}
+
+#date {
+    list-style-type: "🗓";
+}
+
+#location {
+    list-style-type: "📍";
+}
+
+#phone {
+    list-style-type: "📞";
+}
+
+#email {
+    list-style-type: "✉️";
+}
+
+#linkedin {
+    list-style-type: "🙋🏻‍♂️";
+}
+
+#github {
+    list-style-type: "💻";
+}
+
+.exp {
+    font-family: var(--content-font);
+    margin: 0 0 18pt 0;
+}
+
+.exp-header {
+    display: grid;
+    grid-template-columns: 15mm;
+    grid-template-areas:
+        'logo school-name';
+    margin: 0 0 11pt 0;
+}
+
+.exp-logo {
+    grid-area: logo;
+}
+
+.exp-logo img {
+    height: 32pt;
+}
+
+.exp-info {
+    grid-area: school-name;
+    align-self: flex-end;
+    text-align: bottom;
+}
+
+.exp-title {
+    font-size: 12pt;
+    font-weight: 500;
+    margin: 0 0 3pt 0;
+}
+
+
+.exp-date {
+    display: flex;
+    justify-content: space-between;
+}
+
+.reference {
+    margin: 0 0 18pt 0;
+    font-size: 10pt;
+}
+
+.quote {
+    font-size: 10pt;
+    text-align: justify;
+    font-style: italic;
+    margin: 0 0 5pt 0;
+}
+
+.by {
+    font-weight: 500;
+}
+
+.by,
+.role {
+    text-align: right;
+    margin: 0;
+}
+
+
+
+
+/* #linkedin::marker {
+    content: url(../media/linkedin-logo.svg);
+}
+
+#github::marker {
+    content: url(../media/github-logo.svg);
+} */
+
+/* #skills p {
+    text-align: left;
+} */

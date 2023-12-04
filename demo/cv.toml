@@ -1,10 +1,10 @@
 [info]
 name = "Iven Winkelmann"
-tagline = "Data Scientist"
+tagline = "Data Engineer / Data Scientist"
 avatar = "me.png"
 about = """\
-Quick learner and analytical mind with 9 years of experience in research and data \
-analysis. I enjoy optimizing processes and tackling problems through data, \
+Quick learner and analytical mind with 12 years combined experience in research and data. \
+I enjoy optimizing processes and tackling problems through data, \
 always asking "How does this help us act?".\
 """
 personal = """In my free time I enjoy video games to relax and kick back. \
@@ -25,16 +25,27 @@ phone = "+46 (0) 760 81 22 83"
 location = "Stockholm"
 
 [skills]
-core = ["Googling", "Problem Solving", "Communication", "Teamwork", "Leadership"]
-technical = ["Python", "sklearn & co", "SQL", "PySpark", "regex", "git",  "Docker", "AWS", "Databricks", "data modeling"]
+core = ["Problem Solving", "Communication", "Teamwork", "Leadership"]
+technical = ["Python", "PySpark", "SQL", "data modelling",  "regex", "git",  "Docker", "Azure stack", "Databricks", "LLM integration"]
 languages = ["English (fluent)", "Swedish (conversational)", "German (native)",]
+
+[[experience]]
+title = "Data Engineer / Data Scientist"
+company = "Nexer Insight"
+logo = "nexer.png"
+location = "Stockholm, Sweden"
+date = "02/2023 — Present"
+bulletpoints = [
+    "Tech lead / solution architect responsibilities for implementation delivery of data platform and RAG LLM chatbot implementation.",
+    "Small to medium scale projects ranging from implementation of data platforms, to proof-of-concept ML model integrations, and assessments."
+    ]
 
 [[experience]]
 title = "Data Science Tech Lead"
 company = "ACNE"
 logo = "acne.jpg"
 location = "Stockholm, Sweden"
-date = "09/2022 — Present"
+date = "09/2022 — 02/2023"
 bulletpoints = [
     "Conducting code review together with team members to ensure standards and foster growth.",
     "Leading initiative to adopt software development best practices in the team.",

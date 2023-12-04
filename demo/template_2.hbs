@@ -1,0 +1,180 @@
+<html lang="en-US"></html>
+<link rel="stylesheet" href="css/reset.css" />
+<link rel="stylesheet" href="css/cv.css" />
+
+<body>
+  <div class="page">
+    <div class="header">
+      <div class="header__text">
+        <h1 class="name">{{info.name}}</h1>
+        <h2 class="tagline">{{info.tagline}}</h2>
+      </div>
+      <div class="avatar">
+        <img src="media/{{info.avatar}}" />
+      </div>
+    </div>
+    <!-- header -->
+
+    <div class="about-me">
+      <h3 class="section-title">About me</h3>
+      <hr />
+      <ul>
+        {{#each info.about}}
+          <li>{{this}}</li>
+        {{/each}}
+      </ul>
+    </div>
+    <!-- about-me -->
+
+    <div class="column-wrapper">
+      <div class="column-left">
+        {{#each skills}}
+        <div class="list" id="technical-summary">
+          <h3 class="section-title">{{this.title}}</h3>
+          <hr />
+          <ul>
+            {{#each this.items}}
+              <li>{{this}}</li>
+            {{/each}}
+          </ul>
+        </div> <!-- skills -->
+        {{/each}}
+
+        <div class="list" id="contact">
+          <h3 class="section-title">Contact</h3>
+          <hr />
+          <ul>
+            {{#if contact.github}}
+              <li id="github"><a
+                  href={{contact.github.url}}
+                >{{contact.github.text}}</a></li>
+            {{/if}}
+            {{#if contact.linkedin}}
+              <li id="linkedin"><a
+                  href={{contact.linkedin.url}}
+                >{{contact.linkedin.text}}</a></li>
+            {{/if}}
+            <li id="email"><a
+                href="mailto://{{contact.email}}"
+              >{{contact.email}}</a></li>
+            <li id="phone">{{contact.phone}}</li>
+            <li id="location">{{contact.location}}</li>
+          </ul>
+        </div>
+        <!-- contact -->
+      </div>
+      <!-- column-left -->
+
+      <div class="column-right">
+        <div class="block" id="experience">
+          <h3 class="section-title">Experience</h3>
+          <hr />
+          {{#each experience}}
+            <div class="exp">
+              <div class="exp-header">
+                <div class="exp-logo">
+                  <img src="media/{{this.logo}}" />
+                </div>
+                <div class="exp-info">
+                  <h4 class="exp-title">{{this.title}}</h4>
+                  <div class="exp-date">
+                    <h5>{{this.company}}</h5>
+                    <h5>{{this.date}}</h5>
+                  </div>
+                </div>
+              </div>
+              {{#if this.bulletpoints}}
+                <ul>
+                  {{#each this.bulletpoints}}
+                    <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+              {{/if}}
+            </div>
+            <!-- exp -->
+          {{/each}}
+        </div>
+        <!-- experience -->
+      </div>
+      <!-- column-right -->
+    </div>
+    <!-- column-wrapper -->
+  </div>
+  <!-- page -->
+
+  <div class="page">
+    <div class="column-wrapper">
+      <div class="column-left">
+        <h3 class="section-title">References</h3>
+        <hr />
+        {{#each reference}}
+          <div class="reference">
+            <p class="quote">{{this.quote}}</p>
+            <p class="by">&mdash; {{this.name}}</p>
+            <p class="role">{{this.role}}</p>
+          </div>
+        {{/each}}
+        <div class="personal">
+          <h3 class="section-title">Personal</h3>
+          <hr />
+          <p>{{info.personal}}</p>
+        </div>
+      </div>
+      <!-- column-left -->
+
+      <div class="colummn-right">
+        <div class="education">
+          <h3 class="section-title">Education</h3>
+          <hr />
+          {{#each education}}
+            <div class="exp">
+              <div class="exp-header">
+                <div class="exp-logo">
+                  <img src="media/{{this.logo}}" />
+                </div>
+                <div class="exp-info">
+                  <h4 class="exp-title">{{this.degree}}</h4>
+                  <div class="exp-date">
+                    <h5>{{this.school}}</h5>
+                    <h5>{{this.date}}</h5>
+                  </div>
+                </div>
+              </div>
+              {{#if this.bulletpoints}}
+                <ul>
+                  {{#each this.bulletpoints}}
+                    <li>{{this}}</li>
+                  {{/each}}
+                </ul>
+              {{/if}}
+            </div>
+            <!-- exp -->
+          {{/each}}
+        </div>
+        <!-- education -->
+
+        <div class="projects">
+          <h3 class="section-title">Projects</h3>
+          <hr />
+          <ul>
+            {{#each project}}
+              <li>
+                <div class="project">
+                  <h4 class="project-title">{{this.title}}</h4>
+                  <p class="project-description">{{this.description}}<br /></p>
+                  <p class="project-url">→
+                    <a href="https://{{this.url}}">{{this.url}}</a></p>
+                </div>
+              </li>
+            {{/each}}
+          </ul>
+        </div>
+        <!-- projects -->
+
+      </div>
+      <!-- column-right -->
+    </div>
+    <!-- column-wrapper -->
+  </div>
+  <!-- page -->
+</body>

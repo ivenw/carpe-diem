@@ -1,0 +1,148 @@
+[info]
+name = "Iven Winkelmann"
+tagline = "Data Scientist"
+avatar = "me.png"
+about =[
+    "Quick learner and analytical mind with 9 years of experience in research and data",
+    "analysis. I am passionate about data and its potential to drive business decisions."
+]
+personal = """In my free time I enjoy video games to relax and kick back. \
+When I don't have a controller in my hand, I'm looking to quench my curiosity and \
+thirst for learning about something new, by scouring Wikipedia, \
+Reddit, or YouTube for details on topics such as rockets, space, psychology or \
+programming and computer science. I am quite handy and in the spirit of "working \
+with my brain, relaxing with my hands", am not afraid to take a screwdriver into my \
+own hand to fix or build something (like my own keyboards). I enjoy hosting friends \
+and family, tending to them with my signature Amaretto Whisky Sour and engaging in \
+a round of board-gaming."""
+
+[contact]
+github = { text = "github.com/ivenw", url = "https://github.com/ivenw", logo = "github.svg" }
+linkedin = { text = "linkedin.com/in/ivenw", url = "https://linkedin.com/ivenw", logo = "linkedin.svg" }
+email = "winkelmann.iven@gmail.com"
+phone = "+46 (0) 760 81 22 83"
+location = "Stockholm"
+
+[[skills]]
+title = "Molecular Dynamycs"
+items = ["Googling", "Problem Solving", "Communication", "Teamwork", "Leadership"]
+
+[[skills]]
+title = "Python"
+items = ["Python", "sklearn & co", "SQL", "PySpark", "regex", "git",  "Docker", "AWS", "Databricks", "data modeling"]
+
+[[skills]]
+title = "Languages"
+items = ["English (fluent)", "Swedish (conversational)", "German (native)",]
+
+[[experience]]
+title = "Data Science Tech Lead"
+company = "ACNE"
+logo = "acne.jpg"
+location = "Stockholm, Sweden"
+date = "09/2022 — Present"
+bulletpoints = [
+    "Conducting code review together with team members to ensure standards and foster growth.",
+    "Leading initiative to adopt software development best practices in the team.",
+    "Assesing technical requirements for projects and setting tasks with the team.",
+    ]
+
+[[experience]]
+title = "Data Analytics Consultant"
+company = "IKEA"
+logo = "ikea.webp"
+location = "Älmhult, Sweden"
+date = "02/2022 — Present"
+bulletpoints = [
+    "Ongoing support of content strategy teams with web analytics, data literacy training",
+    "Strategic recommendations for how to best utilize metrics and data.",
+    "Set KPIs for assessing and improving marketing communications in an e-commerce environment.",
+]
+
+[[experience]]
+title = "Data Scientist"
+company = "ACNE"
+logo = "acne.jpg"
+location = "Stockholm, Sweden"
+date = "01/2022 — Prersent"
+bulletpoints = [
+    "Identifying opportunity areas for enhancing brand communication strategies with data.",
+    "Performing data engineering responsibilities on a regular basis to ensure data availability for the team.",
+    "Established and implemented requirements for the data science tech stack in a new team.",
+    ]
+
+[[experience]]
+title = "Data Analytics Instructor"
+company = "Nod Coding"
+logo = "nod.jpg"
+location = "Stockholm, Sweden"
+date = "10/2021 — 12/2021"
+bulletpoints = [
+    "Development of SQL and ML course material",
+    "Instruction of students in Python, SQL, Data Visualisation, and ML."]
+
+
+[[education]]
+degree = "Data Science / Analytics Coding Bootcamp"
+school = "Nod Coding"
+logo = "nod.jpg"
+location = "Stockholm, Sweden"
+date = "07/2021 — 09/2021"
+bulletpoints = [
+    "400 hours intensive studies, keeping up with current and future trends in Data Science and Data Analysis.",
+    "Deep dive into statistics, bayesian A/B-testing, clustering techniques and more.",
+    "Completed 5 code jam style projects utilizing Python/Pandas, SQL and ML techniques. The results are hosted in my portfolio on GitHub.",
+]
+
+[[education]]
+degree = "PhD in Biochemistry"
+school = "Stockholm University"
+logo = "su.jpeg"
+date = "11/2014 — 02/2021"
+bulletpoints = [
+    "Implemented custom Python scripts to speed up analysis and entry of experimental data 10-fold.",
+    "Effectively supervised project students and took charge in the onboarding of new colleagues.",
+    "Deepened problem solving, project planning, trouble shooting and time management in a team and individual context.",
+]
+
+[[education]]
+degree = "MSc with excellence in Biopysics"
+school = "University of Osnabrück"
+logo = "uos.png"
+date = "10/2012 — 08/2014"
+
+[[education]]
+degree = "BSc in Cell Biology"
+school = "University of Osnabrück"
+logo = "uos.png"
+date = "10/2009 — 09/2012"
+
+
+[[project]]
+title = "This CV"
+description = """For building this CV, I wrote a CLI tool in Rust that parses a custom 
+HTML/CSS Handlebars template, populating it with data from a TOML file."""
+url = "github.com/ivenw/carpe-vitam"
+
+[[project]]
+title = "Open Source contributions to Helix Editor"
+description = """I am a big fan of the Helix terminal editor and am trying to contribute to 
+it in my free time. This has been great to learn more about Rust and Open Source."""
+url = "github.com/helix-editor/helix/issues/4298"
+
+
+[[reference]]
+name = "Prof. Dr. David Drew"
+role = "PhD Supervisor"
+quote = """Iven is one of the most naturally gifted students I've supervised to date \
+and has strong analytical and planning skills and is a highly effective communicator. \
+[...] At a personal level, Iven is easy to work with and I am sure he will be an \
+asset to any work environment that he goes to."""
+
+[[reference]]
+name = "Nils Skoglund"
+role = "Teacher, Nod Coding"
+quote = """In terms of technical ability, Iven is the most talented student I've \
+supervised to date. He adopts rigorous methodology & has a highly creative mind, \
+enabling him to deliver robust & novel solutions to complex problems. I also have \
+to mention Iven's keen sense for aesthetics and presentation skills."""

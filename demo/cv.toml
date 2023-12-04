@@ -1,21 +1,21 @@
 [info]
-name = "Iven Winkelmann"
+name = "Iven Winkelmann, PhD"
 tagline = "Data Engineer / Data Scientist"
 avatar = "me.png"
 about = """\
 Quick learner and analytical mind with 12 years combined experience in research and data. \
 I enjoy optimizing processes and tackling problems through data, \
-always asking "How does this help us act?".\
+always asking "How does this help us act?".
 """
 personal = """In my free time I enjoy video games to relax and kick back. \
 When I don't have a controller in my hand, I'm looking to quench my curiosity and \
 thirst for learning about something new, by scouring Wikipedia, \
-Reddit, or YouTube for details on topics such as rockets, space, psychology or \
-programming and computer science. I am quite handy and in the spirit of "working \
-with my brain, relaxing with my hands", am not afraid to take a screwdriver into my \
-own hand to fix or build something (like my own keyboards). I enjoy hosting friends \
-and family, tending to them with my signature Amaretto Whisky Sour and engaging in \
-a round of board-gaming."""
+Reddit, or YouTube for details on topics such as maths, computer science, or psychology. \
+I also enjoy learning new programming languages and have dabbled in Rust, Go, and Zig. \
+I am quite handy and in the spirit of "working with my brain, relaxing with my hands", \
+am gardening together with my partner in a community garden, growing peppers for \
+home-made hot sauces. I enjoy hosting friends and family, tending to them with my \
+signature Amaretto Whisky Sour and engaging in a round of board-gaming."""
 
 [contact]
 github = { text = "github.com/ivenw", url = "https://github.com/ivenw", logo = "github.svg" }
@@ -26,66 +26,70 @@ location = "Stockholm"
 
 [skills]
 core = ["Problem Solving", "Communication", "Teamwork", "Leadership"]
-technical = ["Python", "PySpark", "SQL", "data modelling",  "regex", "git",  "Docker", "Azure stack", "Databricks", "LLM integration"]
-languages = ["English (fluent)", "Swedish (conversational)", "German (native)",]
+technical = [
+    "Python",
+    "PySpark",
+    "SQL",
+    "data modelling",
+    "regex",
+    "git",
+    "Docker",
+    "Azure stack",
+    "Databricks",
+    "Terraform",
+    "MLflow",
+    "sklearn",
+    "LLM integration",
+    "Rust",
+]
+languages = ["English (fluent)", "Swedish (conversational)", "German (native)"]
 
 [[experience]]
-title = "Data Engineer / Data Scientist"
+title = "Data Engineer / Data Scientist Consultant"
 company = "Nexer Insight"
 logo = "nexer.png"
 location = "Stockholm, Sweden"
 date = "02/2023 — Present"
 bulletpoints = [
-    "Tech lead / solution architect responsibilities for implementation delivery of data platform and RAG LLM chatbot implementation.",
-    "Small to medium scale projects ranging from implementation of data platforms, to proof-of-concept ML model integrations, and assessments."
-    ]
-
-[[experience]]
-title = "Data Science Tech Lead"
-company = "ACNE"
-logo = "acne.jpg"
-location = "Stockholm, Sweden"
-date = "09/2022 — 02/2023"
-bulletpoints = [
-    "Conducting code review together with team members to ensure standards and foster growth.",
-    "Leading initiative to adopt software development best practices in the team.",
-    "Assesing technical requirements for projects and setting tasks with the team.",
-    ]
+    "Tech lead / solution architect responsibilities in implementation projects.",
+    "Development of RAG powered LLM Chatbot solution for a Swedish municipality and internal product.",
+    "Small to medium scale projects ranging from implementation of data platforms, to proof-of-concept ML model integrations, and assessments.",
+]
 
 [[experience]]
 title = "Data Analytics Consultant"
-company = "IKEA"
+company = "ACNE @ IKEA"
 logo = "ikea.webp"
 location = "Älmhult, Sweden"
-date = "02/2022 — Present"
+date = "02/2022 — 02/2023"
 bulletpoints = [
-    "Ongoing support of content strategy teams with web analytics, data literacy training",
+    "Ongoing support web analytics and data literacy training",
     "Strategic recommendations for how to best utilize metrics and data.",
     "Set KPIs for assessing and improving marketing communications in an e-commerce environment.",
 ]
 
 [[experience]]
-title = "Data Scientist"
+title = "Data Scientist / Tech Lead"
 company = "ACNE"
 logo = "acne.jpg"
 location = "Stockholm, Sweden"
-date = "01/2022 — Prersent"
+date = "01/2022 — 02/2023"
 bulletpoints = [
-    "Identifying opportunity areas for enhancing brand communication strategies with data.",
+    "Conducting code review together with team members to ensure standards and foster growth.",
+    "Leading initiative to adopt software development best practices in the team.",
+    "Assesing technical requirements for projects and setting tasks with the team.",
     "Performing data engineering responsibilities on a regular basis to ensure data availability for the team.",
     "Established and implemented requirements for the data science tech stack in a new team.",
-    ]
-
-[[experience]]
-title = "Data Analytics Instructor"
-company = "Nod Coding"
-logo = "nod.jpg"
-location = "Stockholm, Sweden"
-date = "10/2021 — 12/2021"
-bulletpoints = [
-    "Development of SQL and ML course material",
-    "Instruction of students in Python, SQL, Data Visualisation, and ML."]
-
+]
+# [[experience]]
+# title = "Data Analytics Instructor"
+# company = "Nod Coding"
+# logo = "nod.jpg"
+# location = "Stockholm, Sweden"
+# date = "10/2021 — 12/2021"
+# bulletpoints = [
+#     "Development of SQL and ML course material",
+#     "Instruction of students in Python, SQL, Data Visualisation, and ML."]
 
 [[education]]
 degree = "Data Science / Analytics Coding Bootcamp"
@@ -122,7 +126,6 @@ school = "University of Osnabrück"
 logo = "uos.png"
 date = "10/2009 — 09/2012"
 
-
 [[project]]
 title = "This CV"
 description = """For building this CV, I wrote a CLI tool in Rust that parses a custom 
@@ -134,7 +137,6 @@ title = "Open Source contributions to Helix Editor"
 description = """I am a big fan of the Helix terminal editor and am trying to contribute to 
 it in my free time. This has been great to learn more about Rust and Open Source."""
 url = "github.com/helix-editor/helix/issues/4298"
-
 
 [[reference]]
 name = "Prof. Dr. David Drew"
